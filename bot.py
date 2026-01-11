@@ -6,13 +6,13 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 import tweepy
 
-TELEGRAM_BOT_TOKEN = '7722274577:AAGQ57msn56-pt4fw2bd-LYfmxRd-szsI84'
-CHANNEL_ID = -1002319527520
+TELEGRAM_BOT_TOKEN = 'TOKEN'
+CHANNEL_ID = ID
 
-X_API_KEY = '2ZkAMmW5oMrmWXuUFWhd3bLcq'
-X_API_SECRET = 'ycWOKdEzjjiI2Um9AqnRhtpsCMSFgcpz7I8uE2xoMH9UPeOfpL'
-X_ACCESS_TOKEN = '1920392881098870784-7PgsnXzGDApdgRx3PJ579LWmlqkF55'
-X_ACCESS_SECRET = 'uysg7FhnUsUXdOFD0dNPSFdkZJbFvHEl6POJbNLKxTJAo'
+X_API_KEY = 'API'
+X_API_SECRET = 'SECRET'
+X_ACCESS_TOKEN = 'ACCESS'
+X_ACCESS_SECRET = 'ACESS SECRET'
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -286,4 +286,5 @@ if __name__ == '__main__':
     )
     
     application.add_handler(handler)
+
     application.run_polling()
